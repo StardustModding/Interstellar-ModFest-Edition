@@ -7,6 +7,7 @@ import me.fzzyhmstrs.fzzy_config.api.ConfigApi
 import net.minecraft.resources.ResourceLocation
 import org.slf4j.LoggerFactory
 import org.stardustmodding.interstellar.api.net.ModNetworking
+import org.stardustmodding.interstellar.api.platform.PlatformHelper
 import org.stardustmodding.interstellar.api.registry.InterstellarRegistrate
 import org.stardustmodding.interstellar.impl.command.DimensionTpCommand
 import org.stardustmodding.interstellar.impl.config.ModConfig
@@ -48,6 +49,6 @@ object Interstellar {
             }
         }
 
-        registrate.register()
+        PlatformHelper.finalizeRegistrate()
     }
 }

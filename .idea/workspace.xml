@@ -170,6 +170,9 @@
         <task path="$PROJECT_DIR$/native">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/neoforge">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -180,12 +183,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Interstellar" type="f1a62948:ProjectNode" />
-                <item name="Interstellar" type="2d1252cf:ModuleNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Interstellar" type="f1a62948:ProjectNode" />
-                <item name="grusty" type="2d1252cf:ModuleNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="loom" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -262,6 +273,7 @@
     "Gradle.Interstellar:native [compileRustHost].executor": "Run",
     "Gradle.Interstellar:native [compileRustMulti].executor": "Run",
     "Gradle.Interstellar:native [test].executor": "Run",
+    "Gradle.Interstellar:neoforge [runClient].executor": "Debug",
     "Gradle.interstellar [genSourcesWithVineflower].executor": "Run",
     "Gradle.interstellar:fabric [runServer].executor": "Run",
     "Kotlin.Test.executor": "Run",
@@ -316,7 +328,7 @@
       <recent name="org.stardustmodding.native.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Interstellar:fabric [runClient]">
+  <component name="RunManager" selected="Gradle.Interstellar:neoforge [runClient]">
     <configuration name="Interstellar:fabric [prodJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -400,28 +412,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Interstellar:fabric [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="shadowJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Interstellar:native [compileRustHost]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -456,6 +446,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Interstellar:neoforge [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/neoforge" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Minecraft Client (:fabric)" />
       <item itemvalue="Application.Minecraft Client (:forge)" />
@@ -463,19 +475,19 @@
       <item itemvalue="Application.Minecraft Server (:fabric)" />
       <item itemvalue="Application.Minecraft Server (:forge)" />
       <item itemvalue="Application.Minecraft Server (:neoforge)" />
+      <item itemvalue="Gradle.Interstellar:neoforge [runClient]" />
       <item itemvalue="Gradle.Interstellar:fabric [prodJar]" />
       <item itemvalue="Gradle.Interstellar:fabric [proguardJar]" />
       <item itemvalue="Gradle.Interstellar:fabric [runClient]" />
-      <item itemvalue="Gradle.Interstellar:fabric [shadowJar]" />
       <item itemvalue="Gradle.Interstellar:native [compileRustHost]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Interstellar:neoforge [runClient]" />
         <item itemvalue="Gradle.Interstellar:fabric [runClient]" />
         <item itemvalue="Gradle.Interstellar:native [compileRustHost]" />
         <item itemvalue="Gradle.Interstellar:fabric [prodJar]" />
         <item itemvalue="Gradle.Interstellar:fabric [proguardJar]" />
-        <item itemvalue="Gradle.Interstellar:fabric [shadowJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -611,7 +623,7 @@
       <workItem from="1729976023254" duration="676000" />
       <workItem from="1730936839225" duration="186000" />
       <workItem from="1731631119259" duration="3687000" />
-      <workItem from="1731639026275" duration="2222000" />
+      <workItem from="1731639026275" duration="4371000" />
     </task>
     <servers />
   </component>

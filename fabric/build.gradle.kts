@@ -28,7 +28,6 @@ dependencies {
     modApi("com.terraformersmc:modmenu:${rootProject.property("modmenu_version")}")
 //    modImplementation("foundry.veil:Veil-fabric-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
 
-    modRuntimeOnly("lol.bai:badpackets:fabric-${rootProject.property("badpackets_version")}")
     modRuntimeOnly("maven.modrinth:yeetus-experimentus:${"yeetus_version"()}")
     modRuntimeOnly("maven.modrinth:mixintrace:1.1.1+1.17")
 

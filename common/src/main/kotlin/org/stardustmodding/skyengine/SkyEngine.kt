@@ -27,8 +27,8 @@ object SkyEngine {
     )
 
     fun init() {
-        eagerInit()
         SkyEngineNetworking.init()
+        SkyEngineEntities.ENTITY_TYPE_REGISTRY.register()
 
         CommandRegistrationEvent.EVENT.register { dispatcher, _, _ ->
             for (cmd in commands) {
@@ -43,10 +43,6 @@ object SkyEngine {
 
     fun save(server: MinecraftServer) {
         PlotyardManager.save(server.overworld())
-    }
-
-    private fun eagerInit() {
-        SkyEngineEntities
     }
 
     fun id(value: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(MOD_ID, value)

@@ -14,7 +14,7 @@ object ClientEntities {
     private val MODEL_SHIP_LAYER = ModelLayerLocation(ShipRenderer.textureId(), "main")
 
     fun init() {
-        EntityRendererRegistry.register({ SkyEngineEntities.SHIP }) { ctx ->
+        EntityRendererRegistry.register({ SkyEngineEntities.SHIP.get() }) { ctx ->
             ShipRenderer(ctx)
         }
 

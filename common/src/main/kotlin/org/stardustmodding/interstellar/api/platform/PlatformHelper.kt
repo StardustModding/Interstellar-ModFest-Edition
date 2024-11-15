@@ -8,4 +8,10 @@ object PlatformHelper {
     fun createEntityId(id: String): String? {
         throw AssertionError()
     }
+
+    @JvmStatic
+    @ExpectPlatform
+    fun finalizeRegistrate() {
+        throw AssertionError()
+    }
 }

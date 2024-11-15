@@ -24,7 +24,6 @@ dependencies {
     modApi("me.fzzyhmstrs:fzzy_config:${"fzzy_config_fabric"()}")
 
     modApi("dev.architectury:architectury:${rootProject.property("architectury_version")}")
-    modCompileOnly("lol.bai:badpackets:fabric-${rootProject.property("badpackets_version")}")
 }
 
 tasks.processResources {
