@@ -1,0 +1,49 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "Interstellar",
+    "description": "Explore the universe in style.",
+    "authors": [
+        "NioBeMe",
+        "RedstoneWizard08",
+        "Bogdanasaurus",
+        "LopyLuna",
+        "MilkyFur",
+        "The_seVen_",
+        "CHAZBOMB1",
+        "Stardust Modding Contributors"
+    ],
+    "contact": {
+        "homepage": "https://github.com/StardustModding/Interstellar",
+        "sources": "https://github.com/StardustModding/Interstellar"
+    },
+    "license": "MIT",
+    "icon": "assets/interstellar/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "org.stardustmodding.interstellar.fabric.InterstellarFabric"
+            }
+        ],
+        "client": [
+            {
+                "adapter": "kotlin",
+                "value": "org.stardustmodding.interstellar.fabric.client.InterstellarFabricClient"
+            }
+        ]
+    },
+    "mixins": [
+        "interstellar.mixins.json",
+        "interstellar-common.mixins.json"
+    ],
+    "depends": {
+        "fabric": "*",
+        "minecraft": ">=${minecraft_version}",
+        "architectury": ">=${architectury_version}",
+        "fabric-language-kotlin": ">=${fabric_kotlin_version}",
+        "badpackets": ">=0.8.1"
+    }
+}

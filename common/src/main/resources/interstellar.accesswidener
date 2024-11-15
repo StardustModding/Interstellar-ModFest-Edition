@@ -1,0 +1,55 @@
+accessWidener v2 named
+
+accessible class net/minecraft/client/gui/screens/LoadingOverlay$LogoTexture
+accessible class net/minecraft/server/MinecraftServer$ReloadableResources
+
+extendable class net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator
+extendable class net/minecraft/world/level/dimension/DimensionType
+
+accessible field net/minecraft/client/gui/screens/LoadingOverlay LOGO_BACKGROUND_COLOR I
+
+mutable field net/minecraft/client/gui/screens/LoadingOverlay LOGO_BACKGROUND_COLOR I
+mutable field net/minecraft/client/renderer/texture/SimpleTexture location Lnet/minecraft/resources/ResourceLocation;
+
+accessible field net/minecraft/core/MappedRegistry tags Ljava/util/Map;
+accessible field net/minecraft/core/MappedRegistry byValue Ljava/util/Map;
+accessible field net/minecraft/core/MappedRegistry byId Lit/unimi/dsi/fastutil/objects/ObjectList;
+accessible field net/minecraft/core/MappedRegistry toId Lit/unimi/dsi/fastutil/objects/Reference2IntMap;
+accessible field net/minecraft/core/MappedRegistry byLocation Ljava/util/Map;
+accessible field net/minecraft/core/MappedRegistry byKey Ljava/util/Map;
+accessible field net/minecraft/core/MappedRegistry registrationInfos Ljava/util/Map;
+accessible field net/minecraft/core/MappedRegistry frozen Z
+accessible field net/minecraft/core/MappedRegistry registryLifecycle Lcom/mojang/serialization/Lifecycle;
+accessible field net/minecraft/core/MappedRegistry unregisteredIntrusiveHolders Ljava/util/Map;
+
+mutable field net/minecraft/core/MappedRegistry byValue Ljava/util/Map;
+mutable field net/minecraft/core/MappedRegistry frozen Z
+mutable field net/minecraft/core/MappedRegistry tags Ljava/util/Map;
+mutable field net/minecraft/core/MappedRegistry registryLifecycle Lcom/mojang/serialization/Lifecycle;
+
+accessible field net/minecraft/core/HolderSet$Named contents Ljava/util/List;
+accessible method net/minecraft/commands/synchronization/ArgumentTypeInfos register (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/Class;Lnet/minecraft/commands/synchronization/ArgumentTypeInfo;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo;
+
+accessible field net/minecraft/world/entity/Entity DATA_NO_GRAVITY Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/Entity position Lnet/minecraft/world/phys/Vec3;
+accessible field net/minecraft/world/entity/Entity level Lnet/minecraft/world/level/Level;
+
+accessible field net/minecraft/client/renderer/block/BlockRenderDispatcher modelRenderer Lnet/minecraft/client/renderer/block/ModelBlockRenderer;
+
+accessible field net/minecraft/client/renderer/block/ModelBlockRenderer DIRECTIONS [Lnet/minecraft/core/Direction;
+accessible field net/minecraft/client/renderer/block/ModelBlockRenderer blockColors Lnet/minecraft/client/color/block/BlockColors;
+
+accessible class net/minecraft/client/renderer/block/ModelBlockRenderer$AmbientOcclusionFace
+accessible field net/minecraft/client/renderer/block/ModelBlockRenderer$AmbientOcclusionFace brightness [F
+accessible field net/minecraft/client/renderer/block/ModelBlockRenderer$AmbientOcclusionFace lightmap [I
+
+accessible field com/mojang/blaze3d/vertex/VertexBuffer mode Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;
+accessible field com/mojang/blaze3d/vertex/VertexBuffer indexType Lcom/mojang/blaze3d/vertex/VertexFormat$IndexType;
+
+accessible field net/minecraft/world/level/chunk/PalettedContainer data Lnet/minecraft/world/level/chunk/PalettedContainer$Data;
+accessible field net/minecraft/world/level/chunk/PalettedContainer$Data storage Lnet/minecraft/util/BitStorage;
+accessible field net/minecraft/world/level/chunk/PalettedContainer$Data palette Lnet/minecraft/world/level/chunk/Palette;
+
+accessible method net/minecraft/world/phys/AABB getDirection (Lnet/minecraft/world/phys/AABB;Lnet/minecraft/world/phys/Vec3;[DLnet/minecraft/core/Direction;DDD)Lnet/minecraft/core/Direction;
+accessible field net/minecraft/world/level/chunk/ChunkAccess unsaved Z
+accessible field net/minecraft/world/level/chunk/ChunkAccess heightmaps Ljava/util/Map;

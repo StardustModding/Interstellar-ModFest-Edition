@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="RedstoneWizard08" />
+    <option name="SERVER_URL" value="https://ci.kadaroja.com" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/native/rust/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be1457b9-5da0-4d57-aa8b-fe488928ffd6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.zed/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/stardustmodding/interstellar/mixin/skyengine/LevelMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/gas/Gas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/gas/GasData.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/Planet.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/PlanetSettings.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/data/AtmosphereState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/data/GasState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/data/PlanetState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/data/TerraformationState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/planet/data/WaterState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/registry/ModRegistries.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/api/starsystem/StarSystem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/InterstellarClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/InterstellarClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/client/entity/renderer/PlanetRenderer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/client/gui/suit/CustomizationScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/client/gui/suit/CustomizationScreenHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/client/init/ClientEntities.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/client/init/ClientScreens.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/command/OpenScreenCommand.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/config/ModConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/config/ModConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/entity/PlanetEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/init/ModEntities.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/init/ModScreens.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/resource/ReloadListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/IonEngine.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/block/PoweredBlockEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/buffer/EnergyBuffered.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/operation/EnergyOperation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/ionengine/registry/IonRegistries.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/quantumengine/QuantumEngine.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/quantumengine/block/MachineBlock.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/quantumengine/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/rocketeer/github/GithubClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/rocketeer/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/client/renderer/BlockOutlineRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/client/renderer/BlockOutlineRenderer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/collision/ChunkSectionHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/data/WorldExt.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/entity/ShipEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/entity/ShipEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/plotyard/Plotyard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/plotyard/Plotyard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/CachedChunkManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/GasComposition.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/NativeWrapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/PressureState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/PressureUpdater.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/sim/ShapeManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/pinwheel/_disabled_shaders/include/sphere.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/pinwheel/_disabled_shaders/program/entity/rendertype_entity_planet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/pinwheel/_disabled_shaders/program/planet.fsh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/pinwheel/_disabled_shaders/program/planet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/interstellar/pinwheel/_disabled_shaders/program/planet.vsh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/GrustyExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/GrustyPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/tasks/CompileRustMultiTask.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/tasks/CompileRustTask.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/tasks/RustCompilationParams.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/tasks/RustCompilationWorker.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/util/CargoUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/util/HostUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusty/src/main/kotlin/org/stardustmodding/grusty/plugin/util/RustCompilationMode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/exports.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/aliases.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/chunk.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/collider/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/collider/shapes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/data/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/data/ship.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/engine.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/events.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/hooks.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/interop.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/lib.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/player.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/shapes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/ship.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/state.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/rust/src/util.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/NativeBackend.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/NativeLoader.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/ShipMovementData.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/math/JQuat.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/math/JVec2f.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/math/JVec2i.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/math/JVec3f.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/math/JVec3i.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/shapes/BallShape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/shapes/CubicCompoundShape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/structs/shapes/CuboidShape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/util/BytesExt.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/main/kotlin/org/stardustmodding/natives/util/UuidHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/native/src/test/kotlin/org/stardustmodding/natives/test/NativeBackendTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoforge/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/deactivate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/run" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/fabric">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/forge">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/native">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="Interstellar" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="grusty" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="package-info" />
+        <option value="JUnit5 Test Class" />
+        <option value="Kotlin Object" />
+        <option value="Rust File" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RedstoneWizard08&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/StardustModding/Interstellar-ModFest-Edition",
+    "accountId": "15c8b688-bd88-4a1f-a805-a55481044cf5"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-b66a054985/1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2/minecraft-merged-b66a054985-1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2.jar!/net/minecraft/world/entity/Entity.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-b66a054985/1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2/minecraft-merged-b66a054985-1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2.jar!/net/minecraft/world/entity/LivingEntity.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-b66a054985/1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2/minecraft-merged-b66a054985-1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2.jar!/net/minecraft/world/level/CommonLevelAccessor.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-b66a054985/1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2/minecraft-merged-b66a054985-1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2.jar!/net/minecraft/world/level/EntityGetter.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="2k4xnc8f" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hWuvWS3LCYnfPlp5G3zpHJ9Ywo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Minecraft Client (:fabric).executor": "Debug",
+    "Gradle.Build Interstellar.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Interstellar [build].executor": "Debug",
+    "Gradle.Interstellar:fabric [prodJar].executor": "Run",
+    "Gradle.Interstellar:fabric [proguardJar].executor": "Run",
+    "Gradle.Interstellar:fabric [runClient].executor": "Debug",
+    "Gradle.Interstellar:fabric [shadowJar].executor": "Run",
+    "Gradle.Interstellar:forge [runClient].executor": "Debug",
+    "Gradle.Interstellar:native [compileRustHost].executor": "Run",
+    "Gradle.Interstellar:native [compileRustMulti].executor": "Run",
+    "Gradle.Interstellar:native [test].executor": "Run",
+    "Gradle.interstellar [genSourcesWithVineflower].executor": "Run",
+    "Gradle.interstellar:fabric [runServer].executor": "Run",
+    "Kotlin.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "F:/Source/Interstellar/native/src/test/kotlin/org/stardustmodding/native/test",
+    "last_opened_file_path": "F:/Source/Compositle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15234375",
+    "project.structure.side.proportion": "0.21799308",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Kotlin",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "F:\\.gradle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Source\Interstellar\native\rust\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Source\Interstellar\native\rust\src" />
+      <recent name="F:\Source\Interstellar\native\rust\src\vec" />
+      <recent name="F:\Source\Interstellar\native\rust\src\pos" />
+      <recent name="F:\Source\Interstellar\native\rust\src/pos/mod.rs" />
+      <recent name="F:\Source\Interstellar\common\src\main\kotlin\org\stardustmodding\interstellar\api\util\codecs" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.stardustmodding.interstellar.impl" />
+      <recent name="org.stardustmodding.skyengine.command" />
+      <recent name="org.stardustmodding.skyengine.client.renderer" />
+      <recent name="org.stardustmodding.skyengine.client.entity" />
+      <recent name="org.stardustmodding.skyengine.ext" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.stardustmodding.native.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Interstellar:fabric [runClient]">
+    <configuration name="Interstellar:fabric [prodJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="prodJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Interstellar:fabric [proguardJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="proguardJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Interstellar:fabric [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="RUST_BACKTRACE" value="1" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Interstellar:fabric [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Interstellar:native [compileRustHost]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/native" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileRustHost" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client (:fabric)" />
+      <item itemvalue="Application.Minecraft Client (:forge)" />
+      <item itemvalue="Application.Minecraft Client (:neoforge)" />
+      <item itemvalue="Application.Minecraft Server (:fabric)" />
+      <item itemvalue="Application.Minecraft Server (:forge)" />
+      <item itemvalue="Application.Minecraft Server (:neoforge)" />
+      <item itemvalue="Gradle.Interstellar:fabric [prodJar]" />
+      <item itemvalue="Gradle.Interstellar:fabric [proguardJar]" />
+      <item itemvalue="Gradle.Interstellar:fabric [runClient]" />
+      <item itemvalue="Gradle.Interstellar:fabric [shadowJar]" />
+      <item itemvalue="Gradle.Interstellar:native [compileRustHost]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Interstellar:fabric [runClient]" />
+        <item itemvalue="Gradle.Interstellar:native [compileRustHost]" />
+        <item itemvalue="Gradle.Interstellar:fabric [prodJar]" />
+        <item itemvalue="Gradle.Interstellar:fabric [proguardJar]" />
+        <item itemvalue="Gradle.Interstellar:fabric [shadowJar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="RustfmtProjectSettings">
+    <option name="useRustfmt" value="true" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be1457b9-5da0-4d57-aa8b-fe488928ffd6" name="Changes" comment="" />
+      <created>1717722389982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717722389982</updated>
+      <workItem from="1717722393402" duration="8251000" />
+      <workItem from="1717775492488" duration="3511000" />
+      <workItem from="1717779055004" duration="634000" />
+      <workItem from="1717779921186" duration="2027000" />
+      <workItem from="1717782159106" duration="4787000" />
+      <workItem from="1717798987025" duration="2299000" />
+      <workItem from="1717977916941" duration="5325000" />
+      <workItem from="1718029403511" duration="648000" />
+      <workItem from="1718030087377" duration="4260000" />
+      <workItem from="1718034904528" duration="968000" />
+      <workItem from="1718656139349" duration="6000" />
+      <workItem from="1718901517882" duration="4798000" />
+      <workItem from="1719187156853" duration="2199000" />
+      <workItem from="1719203889528" duration="100000" />
+      <workItem from="1719261748197" duration="2085000" />
+      <workItem from="1719293417919" duration="87000" />
+      <workItem from="1719294646901" duration="1209000" />
+      <workItem from="1719519928814" duration="5972000" />
+      <workItem from="1719530173732" duration="6789000" />
+      <workItem from="1719539185075" duration="915000" />
+      <workItem from="1721069084825" duration="599000" />
+      <workItem from="1721082880298" duration="617000" />
+      <workItem from="1721162175805" duration="2375000" />
+      <workItem from="1721175607709" duration="2862000" />
+      <workItem from="1721181388867" duration="1760000" />
+      <workItem from="1721183519004" duration="1616000" />
+      <workItem from="1721258875284" duration="3274000" />
+      <workItem from="1721269429646" duration="599000" />
+      <workItem from="1721512704013" duration="438000" />
+      <workItem from="1721523253727" duration="104000" />
+      <workItem from="1721581072267" duration="269000" />
+      <workItem from="1721613417893" duration="2874000" />
+      <workItem from="1721708628422" duration="2054000" />
+      <workItem from="1721710718778" duration="907000" />
+      <workItem from="1721752698062" duration="171000" />
+      <workItem from="1721753273714" duration="7831000" />
+      <workItem from="1721766881805" duration="177000" />
+      <workItem from="1721767099652" duration="2349000" />
+      <workItem from="1721858163810" duration="1292000" />
+      <workItem from="1721859904628" duration="2448000" />
+      <workItem from="1721863289223" duration="2432000" />
+      <workItem from="1721920514083" duration="513000" />
+      <workItem from="1721932886691" duration="942000" />
+      <workItem from="1721945202689" duration="3178000" />
+      <workItem from="1722101007102" duration="407000" />
+      <workItem from="1722108933658" duration="7000" />
+      <workItem from="1722614028060" duration="1018000" />
+      <workItem from="1722617847353" duration="404000" />
+      <workItem from="1722632432793" duration="1428000" />
+      <workItem from="1722651545720" duration="4000" />
+      <workItem from="1722739383918" duration="2000" />
+      <workItem from="1722903512716" duration="5519000" />
+      <workItem from="1723307157277" duration="10670000" />
+      <workItem from="1723318064928" duration="164000" />
+      <workItem from="1723318592688" duration="536000" />
+      <workItem from="1723319313720" duration="1192000" />
+      <workItem from="1723323806942" duration="6527000" />
+      <workItem from="1723429113218" duration="1094000" />
+      <workItem from="1723430219408" duration="4000" />
+      <workItem from="1723430232418" duration="28000" />
+      <workItem from="1723430272527" duration="4072000" />
+      <workItem from="1723436912660" duration="800000" />
+      <workItem from="1723480203403" duration="1971000" />
+      <workItem from="1723489717791" duration="2700000" />
+      <workItem from="1724559550903" duration="565000" />
+      <workItem from="1724699601624" duration="13361000" />
+      <workItem from="1724728175949" duration="2432000" />
+      <workItem from="1724960484034" duration="1465000" />
+      <workItem from="1724962628991" duration="773000" />
+      <workItem from="1724967545375" duration="3000" />
+      <workItem from="1725225803199" duration="303000" />
+      <workItem from="1726972037808" duration="1661000" />
+      <workItem from="1726973706874" duration="787000" />
+      <workItem from="1727908899886" duration="271000" />
+      <workItem from="1727909197268" duration="789000" />
+      <workItem from="1727913549005" duration="5620000" />
+      <workItem from="1727927886403" duration="1564000" />
+      <workItem from="1728165853578" duration="176000" />
+      <workItem from="1728170886187" duration="2606000" />
+      <workItem from="1728258584720" duration="410000" />
+      <workItem from="1728607463087" duration="3402000" />
+      <workItem from="1728616574536" duration="2806000" />
+      <workItem from="1728664414643" duration="21992000" />
+      <workItem from="1728692794602" duration="1283000" />
+      <workItem from="1728694087975" duration="2581000" />
+      <workItem from="1728703062077" duration="63000" />
+      <workItem from="1728703212291" duration="22000" />
+      <workItem from="1728703712374" duration="3368000" />
+      <workItem from="1728707743723" duration="1448000" />
+      <workItem from="1728769747986" duration="7108000" />
+      <workItem from="1728776880742" duration="2343000" />
+      <workItem from="1728788581060" duration="1251000" />
+      <workItem from="1728789856625" duration="8399000" />
+      <workItem from="1728844901734" duration="1648000" />
+      <workItem from="1728846566845" duration="150000" />
+      <workItem from="1728846730111" duration="26834000" />
+      <workItem from="1728877799381" duration="995000" />
+      <workItem from="1728945519831" duration="12491000" />
+      <workItem from="1729356569751" duration="13909000" />
+      <workItem from="1729455293371" duration="9580000" />
+      <workItem from="1729553766323" duration="8806000" />
+      <workItem from="1729643695745" duration="1196000" />
+      <workItem from="1729648871618" duration="1345000" />
+      <workItem from="1729724223801" duration="18485000" />
+      <workItem from="1729749322528" duration="2099000" />
+      <workItem from="1729814695473" duration="3872000" />
+      <workItem from="1729880994856" duration="117000" />
+      <workItem from="1729976023254" duration="676000" />
+      <workItem from="1730936839225" duration="186000" />
+      <workItem from="1731631119259" duration="3687000" />
+      <workItem from="1731639026275" duration="2222000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.pro" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="entityRenderer == null" language="JAVA" />
+          <url>jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-2f0642bbe4/1.20.1-loom.mappings.1_20_1.layered+hash.1900670477-v2/minecraft-merged-2f0642bbe4-1.20.1-loom.mappings.1_20_1.layered+hash.1900670477-v2.jar!/net/minecraft/client/renderer/entity/EntityRenderDispatcher.class</url>
+          <line>131</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="uuid" language="kotlin" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

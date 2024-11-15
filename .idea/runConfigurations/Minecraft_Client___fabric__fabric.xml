@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" factoryName="Application" name="Minecraft Client (:fabric)" type="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="temurin-21"/>
+    <option name="MAIN_CLASS_NAME" value="dev.architectury.transformer.TransformerRuntime"/>
+    <module name="Source.Interstellar.fabric.main"/>
+    <shortenClasspath name="ARGS_FILE"/>
+    <option name="VM_PARAMETERS" value="-Dfabric.dli.config=$PROJECT_DIR$/fabric/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient -Darchitectury.main.class=$PROJECT_DIR$/fabric/.gradle/architectury/.main_class -Darchitectury.runtime.transformer=$PROJECT_DIR$/fabric/.gradle/architectury/.transforms -Darchitectury.properties=$PROJECT_DIR$/fabric/.gradle/architectury/.properties -Djdk.attach.allowAttachSelf=true -javaagent:$PROJECT_DIR$/.gradle/architectury/architectury-transformer-agent.jar"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fabric/run/"/>
+    <extension name="net.ashald.envfile">
+      <option name="IS_ENABLED" value="false"/>
+      <option name="IS_SUBST" value="false"/>
+      <option name="IS_PATH_MACRO_SUPPORTED" value="false"/>
+      <option name="IS_IGNORE_MISSING_FILES" value="false"/>
+      <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false"/>
+      <ENTRIES>
+        <ENTRY IS_ENABLED="true" IS_EXECUTABLE="false" PARSER="runconfig"/>
+      </ENTRIES>
+    </extension>
+    <method v="2">
+      <option enabled="true" name="Make"/>
+    </method>
+  <classpathModifications/></configuration>
+</component>

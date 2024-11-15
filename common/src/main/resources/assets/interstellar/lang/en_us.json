@@ -1,0 +1,9 @@
+{
+    "interstellar.mod_config": "Interstellar",
+    "interstellar.mod_config.skyEngine": "Sky Engine",
+    "interstellar.mod_config.skyEngine.plotyardDistance": "Plotyard Distance (Chunks)",
+    "interstellar.mod_config.skyEngine.plotSpacing": "Distance Between Plots (Chunks)",
+    "interstellar.mod_config.skyEngine.plotSpacing.desc": "INCREASING THIS VALUE MEANS MORE LAG WHEN SPAWNING SHIPS!!! (Until I fix it)",
+    "chat.error.interstellar.not_ship_entity": "The specified entity is not a ShipEntity!",
+    "chat.success.interstellar.ship_pos": "This ship is at [X: %s, Z: %s]."
+}
