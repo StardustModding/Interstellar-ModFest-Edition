@@ -2,13 +2,13 @@ import net.fabricmc.loom.task.RemapJarTask
 import net.fabricmc.loom.build.nesting.NestableJarGenerationTask
 
 tasks.register<RemapJarTask>("remapJar") {
-    nestedJars.setFrom()
+//    nestedJars.setFrom()
 }
 
 tasks.register<NestableJarGenerationTask>("processIncludeJars")
 
 architectury {
-    common(rootProject.property("enabled_platforms").toString().split(","))
+    common("enabled_platforms"().split(","))
 }
 
 loom {
@@ -16,18 +16,12 @@ loom {
 }
 
 dependencies {
-    modImplementation("net.fabricmc:fabric-loader:${rootProject.property("fabric_loader_version")}")
+    modImplementation("net.fabricmc:fabric-loader:${"fabric_loader_version"()}")
 
-    compileOnly("com.google.code.gson:gson:2.10.1")
-//    compileOnly("foundry.veil:Veil-mojmap-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
-    compileOnly("com.tterrag.registrate_fabric:Registrate:${"registrate_fabric_version"()}")
-    modApi("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}")
-
-    modApi("dev.architectury:architectury:${rootProject.property("architectury_version")}")
-}
-
-tasks.processResources {
-    inputs.property("version", version)
+//    modApi("foundry.veil:Veil-mojmap-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
+    modImplementation("com.tterrag.registrate_fabric:Registrate:${"registrate_fabric_version"()}")
+    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}")
+    modImplementation("dev.architectury:architectury:${"architectury_version"()}")
 }
 
 operator fun String.invoke(): String {
