@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6198b6ed-0aae-41fc-92f9-c2b416e28dbe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/net/SkyEngineNetworking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/net/SkyEngineNetworking.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/pack.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fabric/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/src/main/resources/fabric.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fabric/src/main/resources/interstellar.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/src/main/resources/interstellar.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoforge/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoforge/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neoforge/src/main/resources/interstellar.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/src/main/resources/interstellar.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoforge/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731784279424</updated>
-      <workItem from="1731784282732" duration="4871000" />
+      <workItem from="1731784282732" duration="6697000" />
     </task>
     <servers />
   </component>
