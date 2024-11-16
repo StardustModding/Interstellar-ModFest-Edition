@@ -10,8 +10,11 @@ import org.stardustmodding.skyengine.net.packet.ShipUpdatedS2CPacket
 
 object SkyEngineNetworking {
     private val channel = NetworkChannel.create(SkyEngine.id("networking"))
+    private var registered = false // its a bugfix but still smh
 
     fun init() {
+        if (registered) return
+
         channel.register(
             ShipUpdatedS2CPacket::class.java,
             ShipUpdatedS2CPacket::encode,
@@ -25,6 +28,8 @@ object SkyEngineNetworking {
             { ShipKilledS2CPacket.createForInit().decode(it) },
             ShipKilledS2CPacket::applySupplier
         )
+
+        registered = true
     }
 
     fun <T> sendToPlayer(player: ServerPlayer, message: T) {

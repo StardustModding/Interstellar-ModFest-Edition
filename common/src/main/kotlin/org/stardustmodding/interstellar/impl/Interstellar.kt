@@ -2,7 +2,6 @@ package org.stardustmodding.interstellar.impl
 
 import dev.architectury.event.events.common.CommandRegistrationEvent
 import dev.architectury.event.events.common.LifecycleEvent
-import dev.architectury.event.events.common.TickEvent
 import me.fzzyhmstrs.fzzy_config.api.ConfigApi
 import net.minecraft.resources.ResourceLocation
 import org.slf4j.LoggerFactory
@@ -14,7 +13,7 @@ import org.stardustmodding.interstellar.impl.config.ModConfig
 import org.stardustmodding.skyengine.SkyEngine
 
 object Interstellar {
-    const val MOD_ID = "interstellar"
+    const val MOD_ID = "interstellar_modfest_edition"
 
     @JvmField
     val LOGGER = LoggerFactory.getLogger(MOD_ID)!!
@@ -40,7 +39,7 @@ object Interstellar {
         ModNetworking.init()
         SkyEngine.init()
 
-        LifecycleEvent.SERVER_STARTING.register(SkyEngine::init)
+        LifecycleEvent.SERVER_STARTING.register(SkyEngine::initServer)
         LifecycleEvent.SERVER_STOPPING.register(SkyEngine::save)
 
         CommandRegistrationEvent.EVENT.register { dispatcher, _, _ ->

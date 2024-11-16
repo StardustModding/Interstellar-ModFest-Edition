@@ -37,7 +37,7 @@ object SkyEngine {
         }
     }
 
-    fun init(server: MinecraftServer) {
+    fun initServer(server: MinecraftServer) {
         PlotyardManager.load(server.overworld())
     }
 

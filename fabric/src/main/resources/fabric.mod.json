@@ -1,8 +1,8 @@
 {
     "schemaVersion": 1,
     "id": "${mod_id}",
-    "version": "${version}",
-    "name": "Interstellar",
+    "version": "${mod_version}",
+    "name": "Interstellar (ModFest Edition)",
     "description": "Explore the universe in style.",
     "authors": [
         "NioBeMe",
@@ -15,8 +15,8 @@
         "Stardust Modding Contributors"
     ],
     "contact": {
-        "homepage": "https://github.com/StardustModding/Interstellar",
-        "sources": "https://github.com/StardustModding/Interstellar"
+        "homepage": "https://github.com/StardustModding/Interstellar-ModFest-Edition",
+        "sources": "https://github.com/StardustModding/Interstellar-ModFest-Edition"
     },
     "license": "MIT",
     "icon": "assets/interstellar/icon.png",
@@ -44,6 +44,6 @@
         "minecraft": ">=${minecraft_version}",
         "architectury": ">=${architectury_version}",
         "fabric-language-kotlin": ">=${fabric_kotlin_version}",
-        "badpackets": ">=0.8.1"
+        "fzzy_config": ">=${fzzy_config}"
     }
 }

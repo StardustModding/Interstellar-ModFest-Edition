@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Interstellar ${version}",
-        "pack_format": 34
+        "description": "Interstellar ${mod_version}",
+        "pack_format": 48
     }
 }

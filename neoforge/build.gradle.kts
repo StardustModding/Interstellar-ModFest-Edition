@@ -25,20 +25,20 @@ repositories {
 }
 
 dependencies {
-    neoForge("net.neoforged:neoforge:${rootProject.property("neoforge_version")}")
+    neoForge("net.neoforged:neoforge:${"neoforge_version"()}")
 
     common(project(":common", "namedElements")) { isTransitive = false }
     shadowCommon(project(":common", "transformProductionNeoForge")) { isTransitive = false }
 
-    modApi("dev.architectury:architectury-neoforge:${rootProject.property("architectury_version")}")
+    modApi("dev.architectury:architectury-neoforge:${"architectury_version"()}")
 //    modImplementation("foundry.veil:Veil-forge-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
 
-//    modRuntimeOnly("maven.modrinth:yeetus-experimentus:${"yeetus_version"()}")
+    modRuntimeOnly("maven.modrinth:yeetus-experimentus:${"yeetus_version"()}")
 
     modApi("thedarkcolour:kotlinforforge-neoforge:${"kotlin_for_forge_version"()}")
 
     modImplementation(include("com.tterrag.registrate:Registrate:${"registrate_forge_version"()}")!!)
-    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config_forge"()}")
+    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}+neoforge")
 }
 
 val buildNumber = System.getenv("GITHUB_RUN_NUMBER")?.let { "-build.$it" } ?: ""

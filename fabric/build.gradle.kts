@@ -33,7 +33,7 @@ dependencies {
 
     modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_kotlin_version")}")
     modImplementation(include("com.tterrag.registrate_fabric:Registrate:${"registrate_fabric_version"()}")!!)
-    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config_fabric"()}")
+    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}")
 }
 
 val buildNumber = System.getenv("GITHUB_RUN_NUMBER")?.let { "-build.$it" } ?: ""
@@ -75,6 +75,5 @@ components.getByName("java") {
 }
 
 operator fun String.invoke(): String {
-    return rootProject.ext[this] as? String
-        ?: throw IllegalStateException("Property $this is not defined")
+    return rootProject.ext[this] as? String ?: throw IllegalStateException("Property $this is not defined")
 }

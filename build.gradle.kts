@@ -1,19 +1,19 @@
 import net.fabricmc.loom.api.LoomGradleExtensionAPI
 import org.jetbrains.dokka.gradle.DokkaTask
-import java.net.URL
+import java.net.URI
 
 plugins {
     id("java")
-    kotlin("jvm") version "2.0.20"
-    kotlin("plugin.serialization") version "2.0.20"
-    id("org.jetbrains.dokka") version "1.9.20"
-    id("architectury-plugin") version "3.4-SNAPSHOT"
-    id("dev.architectury.loom") version "1.7-SNAPSHOT" apply false
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("org.jetbrains.kotlin.jvm")
+    id("org.jetbrains.kotlin.plugin.serialization")
+    id("org.jetbrains.dokka")
+    id("architectury-plugin")
+    id("dev.architectury.loom") apply false
+    id("com.gradleup.shadow")
 }
 
 architectury {
-    minecraft = rootProject.property("minecraft_version").toString()
+    minecraft = "minecraft_version"()
 }
 
 dependencies {
@@ -22,24 +22,21 @@ dependencies {
 
 tasks.build.get().finalizedBy(tasks.named("shadowJar"))
 
+val processedFiles = listOf(
+    "fabric.mod.json",
+    "META-INF/neoforge.mods.toml",
+    "pack.mcmeta",
+    "interstellar.mixins.json",
+    "interstellar-common.mixins.json"
+)
+
 tasks.processResources {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    val props = rootProject.properties.mapValues { it.value.toString() }
 
-    for (file in listOf("fabric.mod.json", "META-INF/neoforge.mods.toml", "pack.mcmeta")) {
-        filesMatching(file) {
-            expand(
-                mapOf(
-                    "group" to rootProject.property("maven_group"),
-                    "version" to project.version,
+    inputs.properties(props)
 
-                    "mod_id" to rootProject.property("mod_id"),
-                    "minecraft_version" to rootProject.property("minecraft_version"),
-                    "architectury_version" to rootProject.property("architectury_version"),
-                    "fabric_kotlin_version" to rootProject.property("fabric_kotlin_version"),
-                    "kotlin_for_forge_version" to rootProject.property("kotlin_for_forge_version"),
-                )
-            )
-        }
+    filesMatching(processedFiles) {
+        expand(props)
     }
 }
 
@@ -53,7 +50,7 @@ allprojects {
     apply(plugin = "maven-publish")
     apply(plugin = "org.jetbrains.dokka")
     apply(plugin = "architectury-plugin")
-    apply(plugin = "com.github.johnrengelman.shadow")
+    apply(plugin = "com.gradleup.shadow")
 
     base.archivesName.set(rootProject.property("archives_base_name").toString())
     version = rootProject.property("mod_version").toString()
@@ -140,21 +137,21 @@ allprojects {
     }
 
     dependencies {
-        compileOnly("org.jetbrains.kotlin:kotlin-stdlib")
-        compileOnly("org.jetbrains.kotlin:kotlin-reflect:2.0.21")
+        compileOnly("org.jetbrains.kotlin:kotlin-stdlib:${"kotlin_version"()}")
+        compileOnly("org.jetbrains.kotlin:kotlin-reflect:${"kotlin_version"()}")
 
-        implementation("org.jetbrains.kotlin:kotlin-reflect:2.0.21")
-        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+        implementation("org.jetbrains.kotlin:kotlin-reflect:${"kotlin_version"()}")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${"kotlinx_coroutines_version"()}")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:${"kotlinx_serialization_version"()}")
     }
 
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
-        options.release.set(21)
+        options.release.set("jvm_target"().toInt())
     }
 
     kotlin {
-        jvmToolchain(21)
+        jvmToolchain("jvm_target"().toInt())
     }
 
     java {
@@ -162,23 +159,12 @@ allprojects {
     }
 
     tasks.processResources {
-        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+        val props = rootProject.properties.mapValues { it.value.toString() }
 
-        for (file in listOf("fabric.mod.json", "META-INF/neoforge.mods.toml", "pack.mcmeta")) {
-            filesMatching(file) {
-                expand(
-                    mapOf(
-                        "group" to rootProject.property("maven_group"),
-                        "version" to project.version,
+        inputs.properties(props)
 
-                        "mod_id" to rootProject.property("mod_id"),
-                        "minecraft_version" to rootProject.property("minecraft_version"),
-                        "architectury_version" to rootProject.property("architectury_version"),
-                        "fabric_kotlin_version" to rootProject.property("fabric_kotlin_version"),
-                        "kotlin_for_forge_version" to rootProject.property("kotlin_for_forge_version"),
-                    )
-                )
-            }
+        filesMatching(processedFiles) {
+            expand(props)
         }
     }
 
@@ -206,21 +192,21 @@ allprojects {
                     includeNonPublic.set(true)
 
                     externalDocumentationLink {
-                        url.set(URL("https://kotlinlang.org/api/kotlinx.serialization/"))
+                        url.set(URI("https://kotlinlang.org/api/kotlinx.serialization/").toURL())
                     }
 
                     externalDocumentationLink {
-                        url.set(URL("https://kotlinlang.org/api/kotlinx.coroutines/"))
+                        url.set(URI("https://kotlinlang.org/api/kotlinx.coroutines/").toURL())
                     }
 
                     externalDocumentationLink {
-                        url.set(URL("https://maven.stardustmodding.org/dokka/releases/net/fabricmc/yarn/1.20.1+build.local/raw/"))
-                        packageListUrl.set(URL("${url.get()}yarn/package-list"))
+                        url.set(URI("https://maven.stardustmodding.org/dokka/releases/net/fabricmc/yarn/1.20.1+build.local/raw/").toURL())
+                        packageListUrl.set(URI("${url.get()}yarn/package-list").toURL())
                     }
 
                     externalDocumentationLink {
-                        url.set(URL("https://maven.stardustmodding.org/dokka/releases/net/fabricmc/fabric-api/fabric-api/0.92.2+local-1.20.1/raw/"))
-                        packageListUrl.set(URL("${url.get()}fabric-api/package-list"))
+                        url.set(URI("https://maven.stardustmodding.org/dokka/releases/net/fabricmc/fabric-api/fabric-api/0.92.2+local-1.20.1/raw/").toURL())
+                        packageListUrl.set(URI("${url.get()}fabric-api/package-list").toURL())
                     }
                 }
             }
@@ -324,11 +310,10 @@ subprojects {
     dependencies {
         "minecraft"("com.mojang:minecraft:${rootProject.property("minecraft_version")}")
 
-        @Suppress("UnstableApiUsage")
-        "mappings"(loom.layered {
+        @Suppress("UnstableApiUsage") "mappings"(loom.layered {
             officialMojangMappings()
             parchment(
-                "org.parchmentmc.data:parchment-${rootProject.property("parchment_minecraft_version")}:${
+                "org.parchmentmc.data:parchment-${rootProject.property("minecraft_version_minor")}:${
                     rootProject.property(
                         "parchment_version"
                     )
@@ -348,4 +333,8 @@ subprojects {
             }
         }
     }
+}
+
+operator fun String.invoke(): String {
+    return rootProject.ext[this] as? String ?: throw IllegalStateException("Property $this is not defined")
 }

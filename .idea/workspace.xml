@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6198b6ed-0aae-41fc-92f9-c2b416e28dbe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___neoforge__neoforge.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/stardustmodding/interstellar/mixin/skyengine/client/LevelRendererMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/stardustmodding/interstellar/mixin/skyengine/client/LevelRendererMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/interstellar/impl/Interstellar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/SkyEngine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/net/SkyEngineNetworking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/stardustmodding/skyengine/net/SkyEngineNetworking.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/interstellar-common.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/src/main/resources/fabric.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/src/main/resources/interstellar.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/src/main/resources/interstellar.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoforge/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoforge/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neoforge/src/main/resources/interstellar.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/neoforge/src/main/resources/interstellar.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +41,46 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/neoforge">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Interstellar" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="loom" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interstellar" type="f1a62948:ProjectNode" />
+                <item name="neoforge" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -40,25 +89,57 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RedstoneWizard08"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/StardustModding/Interstellar-ModFest-Edition",
+    "accountId": "15c8b688-bd88-4a1f-a805-a55481044cf5"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="zdsh1iey" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2owcr6HsIet3JcM8b6vfGuvind3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Minecraft Client (:neoforge).executor": "Debug",
     "Gradle.Build Interstellar.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.Interstellar:neoforge [runClient].executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Source/Interstellar/.gradle/loom-cache/minecraftMaven/net/minecraft/neoforge-21.1.28-minecraft-merged-7c2afbf069/1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2-neoforge-21.1.28/neoforge-21.1.28-minecraft-merged-7c2afbf069-1.21.1-loom.mappings.1_21_1.layered+hash.652182843-v2-neoforge-21.1.28-sources.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [
@@ -66,7 +147,29 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Minecraft Client (:neoforge)">
+  <component name="RunManager" selected="Gradle.Interstellar:neoforge [runClient]">
+    <configuration name="Interstellar:neoforge [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/neoforge" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Minecraft Client (:fabric)" />
       <item itemvalue="Application.Minecraft Client (:forge)" />
@@ -74,9 +177,35 @@
       <item itemvalue="Application.Minecraft Server (:fabric)" />
       <item itemvalue="Application.Minecraft Server (:forge)" />
       <item itemvalue="Application.Minecraft Server (:neoforge)" />
+      <item itemvalue="Gradle.Interstellar:neoforge [runClient]" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Interstellar:neoforge [runClient]" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6198b6ed-0aae-41fc-92f9-c2b416e28dbe" name="Changes" comment="" />
+      <created>1731784279424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731784279424</updated>
+      <workItem from="1731784282732" duration="4871000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

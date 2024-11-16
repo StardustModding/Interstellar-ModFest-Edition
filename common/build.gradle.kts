@@ -21,7 +21,7 @@ dependencies {
     compileOnly("com.google.code.gson:gson:2.10.1")
 //    compileOnly("foundry.veil:Veil-mojmap-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
     compileOnly("com.tterrag.registrate_fabric:Registrate:${"registrate_fabric_version"()}")
-    modApi("me.fzzyhmstrs:fzzy_config:${"fzzy_config_fabric"()}")
+    modApi("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}")
 
     modApi("dev.architectury:architectury:${rootProject.property("architectury_version")}")
 }
