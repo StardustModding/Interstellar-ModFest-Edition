@@ -39,10 +39,18 @@ dependencies {
     shadowBundle(project(":common", "transformProductionNeoForge"))
 
     modImplementation("dev.architectury:architectury-neoforge:${"architectury_version"()}")
-//    modImplementation("foundry.veil:Veil-forge-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
-    modImplementation("thedarkcolour:kotlinforforge-neoforge:${"kotlin_for_forge_version"()}")
-    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}+neoforge")
     modImplementation(include("com.tterrag.registrate:Registrate:${"registrate_forge_version"()}")!!)
+//    modImplementation("foundry.veil:Veil-forge-${rootProject.property("minecraft_version")}:${rootProject.property("veil_version")}")
+
+    modImplementation("thedarkcolour:kotlinforforge-neoforge:${"kotlin_for_forge_version"()}:slim") {
+        exclude(group = "net.neoforged")
+        exclude(group = "net.neoforged.fancymodloader")
+    }
+
+    modImplementation("me.fzzyhmstrs:fzzy_config:${"fzzy_config"()}+${"minecraft_version_minor"()}+neoforge") {
+        exclude(group = "net.neoforged")
+        exclude(group = "net.neoforged.fancymodloader")
+    }
 
     modRuntimeOnly("maven.modrinth:yeetus-experimentus:${"yeetus_version"()}")
 }
