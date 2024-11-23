@@ -116,6 +116,7 @@ class Plotyard(private var levelKey: ResourceKey<Level>) {
                 if (!claimedChunks.contains(ChunkPos(chunkPos.x + x, chunkPos.z + z))) {
                     claimedChunks.add(ChunkPos(chunkPos.x + x, chunkPos.z + z))
                     level.getChunk(chunkPos.x + x, chunkPos.z + z).clear()
+                    level.setChunkForced(chunkPos.x + x, chunkPos.z + z, true)
                 }
             }
         }

@@ -10,8 +10,7 @@
     ],
     "client": [
         "LaunchScreenMixin",
-        "skyengine.LocalPlayerMixin",
-        "skyengine.client.LevelRendererMixin"
+        "skyengine.LocalPlayerMixin"
     ],
     "server": [],
     "injectors": {

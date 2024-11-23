@@ -6,7 +6,7 @@ import me.fzzyhmstrs.fzzy_config.validation.number.ValidatedInt
 
 class SkyEngineConfig : ConfigSection() {
     @ClientModifiable
-    var plotyardDistance = ValidatedInt(2048, Int.MAX_VALUE, 1024)
+    var plotyardDistance = ValidatedInt(8192, Int.MAX_VALUE, 1024)
 
     @ClientModifiable
     var plotSpacing = ValidatedInt(16, Int.MAX_VALUE, 4)
